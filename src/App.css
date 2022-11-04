@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+h1 {
+  font-size: 18px;
+  font-weight: 100;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-container {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(167, 186, 167);
+}
+
+.header-container img {
+  height: 50px;
+  width: 60px;
+}
+
+.main {
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 30px;
+}
+
+.main p {
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
   color: white;
+  font-size: 40px;
+  background-color: blue;
+  line-height: 70px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.div-button-haut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.div-button-haut button {
+  height: 70px;
+  width: 70px;
+  border-style: none;
+  background-color: #fff;
+  color: black;
+  font-size: 40px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.btn-reset {
+  height: 30px;
+  width: 70px;
+  color: white;
+  font-size: 18px;
+  background-color: blue;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.app-footer {
+  color: black;
+  background-color: #dddddd;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+}
+
+.app-footer span {
+  font-weight: bold;
 }
