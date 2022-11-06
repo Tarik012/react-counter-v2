@@ -1,5 +1,12 @@
-const Counter = ({ counter, setCounter }) => {
-  // Fonction qui va gérer la mise a jour de mon state.
+// Import du Hook useState
+import { useState } from "react";
+
+// Mon composant Counter
+const Counter = () => {
+  // Déclaration d'un Hook useState
+  const [counter, setCounter] = useState(0);
+
+  // Fonction qui va gérer la valeur d'état counter de mon state au clic
   const handleClick = (action) => {
     if (action === "minus") {
       setCounter(counter - 1);
@@ -9,6 +16,8 @@ const Counter = ({ counter, setCounter }) => {
       setCounter(0);
     }
   };
+
+  // Ce que retourne mon composant Counter
   return (
     <div className="main">
       <div className="div-button-haut">
