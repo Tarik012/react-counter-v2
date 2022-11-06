@@ -15,7 +15,7 @@ function App() {
 
   // Fonction qui ajoute un compteur au clic (spread operator de array => crée une copie permettant d'avoir un nouvel état count)
   const addCounter = () => {
-    setCounters([...counters, []]);
+    counters.length < 2 && setCounters([...counters, []]); // je limite à 3 compteurs
   };
 
   // Ce que retourne mon composant
@@ -25,17 +25,17 @@ function App() {
       <div className="button">
         <button onClick={addCounter}>Add a counter</button>
       </div>
-      <div>
+
+      <div className="test">
         <Counter />
         {counters.map((counter, index) => {
           return (
-            <div className="Counter-container" key={index}>
+            <div key={index}>
               <Counter />
             </div>
           );
         })}
       </div>
-
       <Footer />
     </div>
   );
